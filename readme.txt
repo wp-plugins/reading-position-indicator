@@ -23,6 +23,10 @@ Indicator](https://css-tricks.com/reading-position-indicator/)
 
 If you have created your own language pack, or have an update of an existing one, you can send [gettext PO and MO files](http://codex.wordpress.org/Translating_WordPress) to me so that I can bundle it into this plugin. You can [download the latest POT file from here](http://plugins.svn.wordpress.org/reading-position-indicator/trunk/languages/reading-position-indicator.pot).
 
+== Screenshots ==
+
+1. Plugin configuration screen
+
 == Installation ==
 
 1. Upload Reading Position Indicator to your plugins directory.

@@ -3,6 +3,7 @@
 class iworks_position
 {
     private $base;
+    private $capability;
     private $options;
     private $root;
     private $version = '1.0';
@@ -14,6 +15,7 @@ class iworks_position
          */
         $this->base = dirname( dirname( __FILE__ ) );
         $this->root = plugins_url('', (dirname(dirname(__FILE__))));
+        $this->capability = apply_filters( 'iworks_reading_position_indicator_capability', 'manage_options' );
 
         /**
          * options
@@ -77,6 +79,7 @@ class iworks_position
 
     public function admin_init()
     {
+        add_filter('plugin_row_meta', array($this, 'plugin_row_meta'), 10, 2);
         /**
          * options
          */
@@ -136,5 +139,26 @@ class iworks_position
         }
         return $this->version;
     }
+
+    public function plugin_row_meta($links, $file)
+    {
+        if ( preg_match('/reading-position-indicator.php$/', $file ) ) {
+            if ( !is_multisite() && current_user_can( $this->capability ) ) {
+                $links[] = sprintf(
+                    '<a href="%s">%s</a>',
+                    add_query_arg( 'page', 'irpi_index', admin_url('themes.php')),
+                    __( 'Settings' )
+                );
+            }
+            if ( !$this->is_pro ) {
+                $links[] = sprintf(
+                    '<a href="http://iworks.pl/donate/reading-position-indicator.php">%s</a>',
+                    __( 'Donate' )
+                );
+            }
+        }
+        return $links;
+    }
+
 
 }

@@ -1,6 +1,6 @@
 === Reading Position Indicator ===
 Contributors: iworks
-Donate link: http://iworks.pl/donate/upprev.php
+Donate link: http://iworks.pl/donate/reading-position-indicator.php
 Tags: animated, animation, notification, post, posts, indicator
 Requires at least: 3.3
 Tested up to: 4.1.1

@@ -4,7 +4,7 @@ Donate link: http://iworks.pl/donate/reading-position-indicator.php
 Tags: animated, animation, notification, post, posts, indicator
 Requires at least: 3.3
 Tested up to: 4.1.1
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,7 +15,6 @@ single entry.
 
 Create a vertical progress bar to show how scroll progress of current
 single entry.
-
 
 Thank you [Pankaj Parashar](http://pankajparashar.com/) for your article
 on CSS-TRICKS about [Reading Position
@@ -40,7 +39,6 @@ If you have created your own language pack, or have an update of an existing one
 * Release date: 2015-04-18
 * Remove "console.log" from script.
 * Fix small issue in main position class.
-
 
 = 1.0.0 =
 

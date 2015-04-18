@@ -4,7 +4,7 @@ Plugin Name: Reading Position Indicator
 Plugin URI: http:/iworks.pl/
 Description: Add reading position indicator on page top.
 Author: Marcin Pietrzak
-Version: 1.0
+Version: 1.0.1
 Author URI: http://iworks.pl/
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html

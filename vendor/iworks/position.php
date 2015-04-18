@@ -6,7 +6,7 @@ class iworks_position
     private $capability;
     private $options;
     private $root;
-    private $version = '1.0';
+    private $version = '1.0.1';
 
     public function __construct()
     {

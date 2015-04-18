@@ -35,6 +35,13 @@ If you have created your own language pack, or have an update of an existing one
 
 == Changelog ==
 
+= 1.0.1 =
+
+* Release date: 2015-04-18
+* Remove "console.log" from script.
+* Fix small issue in main position class.
+
+
 = 1.0.0 =
 
 * Release date: 2015-04-14

@@ -142,21 +142,20 @@ class iworks_position
 
     public function plugin_row_meta($links, $file)
     {
-        if ( preg_match('/reading-position-indicator.php$/', $file ) ) {
-            if ( !is_multisite() && current_user_can( $this->capability ) ) {
-                $links[] = sprintf(
-                    '<a href="%s">%s</a>',
-                    add_query_arg( 'page', 'irpi_index', admin_url('themes.php')),
-                    __( 'Settings' )
-                );
-            }
-            if ( !$this->is_pro ) {
-                $links[] = sprintf(
-                    '<a href="http://iworks.pl/donate/reading-position-indicator.php">%s</a>',
-                    __( 'Donate' )
-                );
-            }
+        if ( !preg_match('/reading-position-indicator.php$/', $file ) ) {
+            return $links;
         }
+        if ( !is_multisite() && current_user_can( $this->capability ) ) {
+            $links[] = sprintf(
+                '<a href="%s">%s</a>',
+                add_query_arg( 'page', 'irpi_index', admin_url('themes.php')),
+                __( 'Settings' )
+            );
+        }
+        $links[] = sprintf(
+            '<a href="http://iworks.pl/donate/reading-position-indicator.php">%s</a>',
+            __( 'Donate' )
+        );
         return $links;
     }
 

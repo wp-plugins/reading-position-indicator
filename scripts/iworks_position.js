@@ -3,8 +3,6 @@ if ( typeof(jQuery) != 'undefined' ) {
 
         var css_class = '';
 
-        console.log(iworks_position.style);
-
         if ( 'undefined' != typeof iworks_position ) {
             if ( 'gradient' == iworks_position.style) {
                 css_class = 'multiple';
@@ -12,7 +10,6 @@ if ( typeof(jQuery) != 'undefined' ) {
                 css_class = 'single';
             }
         }
-        console.log(css_class);
         $('body').append('<progress value="0" id="reading-position-indicator" class="'+css_class+'"><div class="progress-container"><span class="progress-bar"></span></div></progress>');
 
         var getMax = function(){
